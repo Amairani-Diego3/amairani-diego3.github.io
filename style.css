@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+body{
+    background-color:white;
+  
+}
+
+/* inicio Barra de navegación */
+.header {
+  
+    background-color: rgb(146, 135, 84);
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header .nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.header .nav .ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.header li{
+    width: 100%;
+}
+
+.header .nav a{
+   font-family:'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;  
+    margin: 0 20px 0 20px;
+    font-size: 1.2em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.header.nav a:active{
+background-color: palevioletred;
+    font-weight: bold;
+}
+.header .nav .logo{
+    color: rgb(247, 250, 247);
+    font-size: 3em;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 4px;
+}
+/*fin Barra de navegacion */
+
+
+
+  /* inicio FOOTER*/
+  .footer{
+    background-color: rgba(127, 109, 51, 0.826);
+ padding: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+  }
+  .footer h2{
+    color: rgb(215, 214, 210);
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+   /* fin FOOTER*/
+
+
+
+/*inicio INDEX*/
+.index-main{
+    padding: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-items: center;
+
+}
+.index-main h1{
+    color: rgba(57, 125, 18, 0.772);
+    font-size: 3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+.index-main .index-1section p{
+    font-size: 1.2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:justify;
+}
+.index-divisor{
+    margin-top: 40px;
+    display: grid;
+    column-gap: 20px;
+grid-template-columns: repeat(2, 1fr);
+}
+.index-divisor picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1/2;
+}
+
+.index-divisor picture img{
+   border-radius: 60px;
+   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.8);
+}
+.index-divisor article {
+    grid-column: 2/3;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+.index-divisor article b{
+    color: rgb(0, 0, 0);
+    background-color: rgba(199, 188, 129, 0.945);
+    border-radius: 10px;
+    padding: 2px;
+
+}
+/*FIN INDEX*/
+
+
+/*inicio TIPOS*/
+.tipos-tema{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(44, 81, 58);
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tipos-card-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 100px;
+
+}
+.tipos-card-container .card{
+width: 325px;
+background-color: #aa8a5ea5;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+margin: 20px;
+}   
+.tipos-card-container h3{
+    text-align: center;
+}
+.tipos-card-container .card img{
+    width: 100%;
+    height: 300px;
+
+}
+.tipos-card-container .card-content{
+padding: 16px;
+}
+.tipos-card-container .card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.tipos-card-container .card-content p{
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.tipos-card-container .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(90, 173, 90);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+.tipos-card-container .btn:hover{
+    background-color: rgb(243, 87, 163);
+    color: black;
+}
+/*fin TIPOS*/
+
+
+
+/*inicio CONSEJOS*/
+.consejos-img{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/plantas.webp);
+    height: 100vh;
+    background-position: center;
+ text-align: center;
+ padding: 25px;
+}
+.consejos-img .consejos-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   
+}
+.consejos-img .consejos-section p{
+    color: white;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.consejos-img .consejos-section div{
+    background-color: rgb(164, 151, 102);
+    border-radius: 15px;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*fin CONSEJOS*/
+
+
+/*inicio FORMULARIO*/
+.funcion{
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.funcion picture {
+
+    width: 50%;
+    text-align: center;
+    height: 420px;
+    margin-bottom: 20px;
+}
+.funcion picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10000px;
+}
+.funcion picture:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 10px 10px rgba(0 0 0 0.5);
+}
+.funcion .p{
+    text-align: center;
+}
+/*fin FORMULARIO*/
+
+
+/*inicio MEXICO*/
+.mexico-formulario{
+    width: 30vw;
+    height: auto;
+    margin-left: 35%;
+    background-color: rgba(105, 163, 61, 0.76);
+   display:flex ;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 60px;
+   margin-top: 60px;
+   border-radius: 10px;
+}
+.mexico-formulario form{
+    width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+.mexico-formulario h1{
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10   px;
+}
+.mexico-formulario  form div{
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.mexico-formulario label{
+    font-size: 1.1em;
+    font-family:monospace   ;
+    padding-left: 3%;
+}
+.mexico-formulario input{
+    width: 100%;
+    border: none;
+border-bottom:1px solid black;
+     background: none;
+     height: 30px;
+     margin-bottom: 20px;
+}
+
+/*fin MEXICO*/
+
+
+
+@media (max-width:900px){
+
+    /* inicio Barra de navegacion */
+    .header .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .header .nav .ul{
+flex-direction: column;
+    }
+    .header .nav .logo{
+       padding: 0;
+        font-size: 2em;
+    }
+    /* fin Barra de navegacion */
+
+
+/*footer*/
+.footer h2{
+    font-size: 1em;
+  }
+  /*footer*/
+
+
+      /* inicio INDEX*/
+      .index-main h1{
+        color: rgb(180, 192, 72);
+        font-size: 2em
+        
+    }
+      .index-divisor picture{
+        grid-column: 1/3;
+      margin-bottom: 20px;
+    }
+    .index-divisor picture img{
+width: 100%;
+text-align: center;
+border-radius: 0;
+     }
+     .index-divisor article {
+         grid-column: 1/3;
+         text-align: center;
+     }
+       /* fin INDEX*/
+
+       /*inicio CONSEJOS*/
+       .consejos-img .consejos-section{
+   
+        flex-direction: column;
+        
+    }
+       /*fin CONSEJOS*/
+
+          /*inicio FUNCION*/
+          .funcion picture{
+            height: 120px;
+          }
+             /*inicio FUNCION*/
+
+             /*inicio TIPOS*/
+             .tipos-card-container .card img{
+                height: 200px;
+            
+            }
+            /*fin TIPOS*/
+
+            /*inicio mexico*/
+            .mexico-formulario{
+                width: 90%;
+                height: auto;
+                margin-left: 5%;
+              padding: 0;
+            }
+            .mexico-formulario h1{
+               font-size: 1.45em;
+                border-radius: 20px;
+            }
+            /*fin mexico*/
+       
+}
+
